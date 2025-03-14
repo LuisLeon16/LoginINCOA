@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62944FB4-67FF-453F-9F39-3DD0B6C22CD7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LoginINCOA</RootNamespace>
+    <AssemblyName>LoginINCOA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\CastleCompany\CastleCompany\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Buscador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Buscador.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.7.0.7, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="ConexcionBD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ConexcionBD.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsFormsCalendar, Version=1.1.4610.23063, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WindowsFormsCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercaDeINCOA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDeINCOA.Designer.cs">
+      <DependentUpon>AcercaDeINCOA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarNotasTrim1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarNotasTrim1.Designer.cs">
+      <DependentUpon>AgregarNotasTrim1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarNotasTrim2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarNotasTrim2.designer.cs">
+      <DependentUpon>AgregarNotasTrim2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarNotasTrim3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarNotasTrim3.designer.cs">
+      <DependentUpon>AgregarNotasTrim3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnosSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumnosSistema.Designer.cs">
+      <DependentUpon>AlumnosSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnosSistemaDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumnosSistemaDocente.designer.cs">
+      <DependentUpon>AlumnosSistemaDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignaturasSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignaturasSistema.designer.cs">
+      <DependentUpon>AsignaturasSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BienvenidaUsuarioscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BienvenidaUsuarioscs.Designer.cs">
+      <DependentUpon>BienvenidaUsuarioscs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BienvenidaUsuariosDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BienvenidaUsuariosDocentes.Designer.cs">
+      <DependentUpon>BienvenidaUsuariosDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BotonesRedondeados.cs" />
+    <Compile Include="BuscadorAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscadorAlumnos.Designer.cs">
+      <DependentUpon>BuscadorAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscadorDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscadorDocentes.designer.cs">
+      <DependentUpon>BuscadorDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscadorUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscadorUsuarios.designer.cs">
+      <DependentUpon>BuscadorUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscador_AlumAsign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscador_AlumAsign.designer.cs">
+      <DependentUpon>Buscador_AlumAsign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario.designer.cs">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarioINCOA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarioINCOA.Designer.cs">
+      <DependentUpon>CalendarioINCOA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlConexion.cs" />
+    <Compile Include="ControlesCombobox.cs" />
+    <Compile Include="Docente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docente.Designer.cs">
+      <DependentUpon>Docente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocentesSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocentesSistema.Designer.cs">
+      <DependentUpon>DocentesSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocentesSistemaDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocentesSistemaDocentes.designer.cs">
+      <DependentUpon>DocentesSistemaDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarAlumnos.Designer.cs">
+      <DependentUpon>EliminarAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarAsignatura.designer.cs">
+      <DependentUpon>EliminarAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarDocentes.Designer.cs">
+      <DependentUpon>EliminarDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarSecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarSecciones.Designer.cs">
+      <DependentUpon>EliminarSecciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarUsuarios.Designer.cs">
+      <DependentUpon>EliminarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_AsignAlumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_AsignAlumn.designer.cs">
+      <DependentUpon>Eliminar_AsignAlumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encriptar.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuariosSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuariosSistema.Designer.cs">
+      <DependentUpon>frmUsuariosSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="incoa_systemdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>incoa_systemdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InicioAdmins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioAdmins.Designer.cs">
+      <DependentUpon>InicioAdmins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioDocente.designer.cs">
+      <DependentUpon>InicioDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeAprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeAprobacion.designer.cs">
+      <DependentUpon>MensajeAprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeCierreSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeCierreSesion.designer.cs">
+      <DependentUpon>MensajeCierreSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeErrorCamposVacios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeErrorCamposVacios.designer.cs">
+      <DependentUpon>MensajeErrorCamposVacios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeErrorDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeErrorDB.designer.cs">
+      <DependentUpon>MensajeErrorDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeErrorDuplicados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeErrorDuplicados.designer.cs">
+      <DependentUpon>MensajeErrorDuplicados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeErrorEliminarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeErrorEliminarDatos.designer.cs">
+      <DependentUpon>MensajeErrorEliminarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeErrorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeErrorLogin.designer.cs">
+      <DependentUpon>MensajeErrorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeNoSeleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeNoSeleccion.designer.cs">
+      <DependentUpon>MensajeNoSeleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniForm_Asign_Alumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniForm_Asign_Alumn.designer.cs">
+      <DependentUpon>MiniForm_Asign_Alumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAlumnos.Designer.cs">
+      <DependentUpon>ModificarAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAsignatura.designer.cs">
+      <DependentUpon>ModificarAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarDocentes.Designer.cs">
+      <DependentUpon>ModificarDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarENotasTrim1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarENotasTrim1.designer.cs">
+      <DependentUpon>ModificarENotasTrim1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarENotasTrim2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarENotasTrim2.designer.cs">
+      <DependentUpon>ModificarENotasTrim2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarENotasTrim3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarENotasTrim3.designer.cs">
+      <DependentUpon>ModificarENotasTrim3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarSecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarSecciones.Designer.cs">
+      <DependentUpon>ModificarSecciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuarios.Designer.cs">
+      <DependentUpon>ModificarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_AsignAlumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_AsignAlumn.designer.cs">
+      <DependentUpon>Modificar_AsignAlumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotasSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotasSistema.Designer.cs">
+      <DependentUpon>NotasSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotasSistemaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotasSistemaAdmin.designer.cs">
+      <DependentUpon>NotasSistemaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrimerTrimestre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimerTrimestre.Designer.cs">
+      <DependentUpon>PrimerTrimestre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrimerTrimestreAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimerTrimestreAdmin.designer.cs">
+      <DependentUpon>PrimerTrimestreAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar_AsignAlumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar_AsignAlumn.designer.cs">
+      <DependentUpon>Registrar_AsignAlumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResumenTrimestres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResumenTrimestres.designer.cs">
+      <DependentUpon>ResumenTrimestres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResumenTrimestresAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResumenTrimestresAdmin.designer.cs">
+      <DependentUpon>ResumenTrimestresAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeccionesSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeccionesSistema.designer.cs">
+      <DependentUpon>SeccionesSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SegundoTrimestre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SegundoTrimestre.designer.cs">
+      <DependentUpon>SegundoTrimestre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SegundoTrimestreAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SegundoTrimestreAdmin.designer.cs">
+      <DependentUpon>SegundoTrimestreAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TercerTrimestre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TercerTrimestre.designer.cs">
+      <DependentUpon>TercerTrimestre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TercerTrimestreAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TercerTrimestreAdmin.designer.cs">
+      <DependentUpon>TercerTrimestreAdmin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcercaDeINCOA.resx">
+      <DependentUpon>AcercaDeINCOA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarNotasTrim1.resx">
+      <DependentUpon>AgregarNotasTrim1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarNotasTrim2.resx">
+      <DependentUpon>AgregarNotasTrim2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarNotasTrim3.resx">
+      <DependentUpon>AgregarNotasTrim3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumnosSistema.resx">
+      <DependentUpon>AlumnosSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumnosSistemaDocente.resx">
+      <DependentUpon>AlumnosSistemaDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignaturasSistema.resx">
+      <DependentUpon>AsignaturasSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BienvenidaUsuarioscs.resx">
+      <DependentUpon>BienvenidaUsuarioscs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BienvenidaUsuariosDocentes.resx">
+      <DependentUpon>BienvenidaUsuariosDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscadorAlumnos.resx">
+      <DependentUpon>BuscadorAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscadorDocentes.resx">
+      <DependentUpon>BuscadorDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscadorUsuarios.resx">
+      <DependentUpon>BuscadorUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscador_AlumAsign.resx">
+      <DependentUpon>Buscador_AlumAsign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendario.resx">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarioINCOA.resx">
+      <DependentUpon>CalendarioINCOA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docente.resx">
+      <DependentUpon>Docente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocentesSistema.resx">
+      <DependentUpon>DocentesSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocentesSistemaDocentes.resx">
+      <DependentUpon>DocentesSistemaDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAlumnos.resx">
+      <DependentUpon>EliminarAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAsignatura.resx">
+      <DependentUpon>EliminarAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarDocentes.resx">
+      <DependentUpon>EliminarDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarSecciones.resx">
+      <DependentUpon>EliminarSecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarUsuarios.resx">
+      <DependentUpon>EliminarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_AsignAlumn.resx">
+      <DependentUpon>Eliminar_AsignAlumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuariosSistema.resx">
+      <DependentUpon>frmUsuariosSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioAdmins.resx">
+      <DependentUpon>InicioAdmins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioDocente.resx">
+      <DependentUpon>InicioDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeAprobacion.resx">
+      <DependentUpon>MensajeAprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeCierreSesion.resx">
+      <DependentUpon>MensajeCierreSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeErrorCamposVacios.resx">
+      <DependentUpon>MensajeErrorCamposVacios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeErrorDB.resx">
+      <DependentUpon>MensajeErrorDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeErrorDuplicados.resx">
+      <DependentUpon>MensajeErrorDuplicados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeErrorEliminarDatos.resx">
+      <DependentUpon>MensajeErrorEliminarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeErrorLogin.resx">
+      <DependentUpon>MensajeErrorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeNoSeleccion.resx">
+      <DependentUpon>MensajeNoSeleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniForm_Asign_Alumn.resx">
+      <DependentUpon>MiniForm_Asign_Alumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAlumnos.resx">
+      <DependentUpon>ModificarAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAsignatura.resx">
+      <DependentUpon>ModificarAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarDocentes.resx">
+      <DependentUpon>ModificarDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarENotasTrim1.resx">
+      <DependentUpon>ModificarENotasTrim1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarENotasTrim2.resx">
+      <DependentUpon>ModificarENotasTrim2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarENotasTrim3.resx">
+      <DependentUpon>ModificarENotasTrim3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarSecciones.resx">
+      <DependentUpon>ModificarSecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarUsuarios.resx">
+      <DependentUpon>ModificarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_AsignAlumn.resx">
+      <DependentUpon>Modificar_AsignAlumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotasSistema.resx">
+      <DependentUpon>NotasSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotasSistemaAdmin.resx">
+      <DependentUpon>NotasSistemaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimerTrimestre.resx">
+      <DependentUpon>PrimerTrimestre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimerTrimestreAdmin.resx">
+      <DependentUpon>PrimerTrimestreAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registrar_AsignAlumn.resx">
+      <DependentUpon>Registrar_AsignAlumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResumenTrimestres.resx">
+      <DependentUpon>ResumenTrimestres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResumenTrimestresAdmin.resx">
+      <DependentUpon>ResumenTrimestresAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeccionesSistema.resx">
+      <DependentUpon>SeccionesSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SegundoTrimestre.resx">
+      <DependentUpon>SegundoTrimestre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SegundoTrimestreAdmin.resx">
+      <DependentUpon>SegundoTrimestreAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TercerTrimestre.resx">
+      <DependentUpon>TercerTrimestre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TercerTrimestreAdmin.resx">
+      <DependentUpon>TercerTrimestreAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="incoa_systemdbDataSet.xsc">
+      <DependentUpon>incoa_systemdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="incoa_systemdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>incoa_systemdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="incoa_systemdbDataSet.xss">
+      <DependentUpon>incoa_systemdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
