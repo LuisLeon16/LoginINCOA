@@ -81,12 +81,12 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.mtxtNacimiento = new System.Windows.Forms.MaskedTextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.cboEspecialidad = new System.Windows.Forms.ComboBox();
+            this.cboGenero = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.alumnosTableAdapter = new LoginINCOA.incoa_systemdbDataSetTableAdapters.AlumnosTableAdapter();
-            this.cboEspecialidad = new System.Windows.Forms.ComboBox();
-            this.cboGenero = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DetallesAlumnosSistema)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alumnosBindingSource)).BeginInit();
@@ -685,6 +685,32 @@
             this.panel9.Size = new System.Drawing.Size(846, 199);
             this.panel9.TabIndex = 34;
             // 
+            // cboEspecialidad
+            // 
+            this.cboEspecialidad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(59)))), ((int)(((byte)(89)))));
+            this.cboEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cboEspecialidad.ForeColor = System.Drawing.Color.White;
+            this.cboEspecialidad.Location = new System.Drawing.Point(100, 141);
+            this.cboEspecialidad.Name = "cboEspecialidad";
+            this.cboEspecialidad.Size = new System.Drawing.Size(128, 32);
+            this.cboEspecialidad.TabIndex = 7;
+            // 
+            // cboGenero
+            // 
+            this.cboGenero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(59)))), ((int)(((byte)(89)))));
+            this.cboGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cboGenero.ForeColor = System.Drawing.Color.White;
+            this.cboGenero.Location = new System.Drawing.Point(21, 142);
+            this.cboGenero.Name = "cboGenero";
+            this.cboGenero.Size = new System.Drawing.Size(66, 32);
+            this.cboGenero.TabIndex = 6;
+            // 
             // panel7
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -722,30 +748,6 @@
             // alumnosTableAdapter
             // 
             this.alumnosTableAdapter.ClearBeforeFill = true;
-            // 
-            // cboEspecialidad
-            // 
-            this.cboEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(59)))), ((int)(((byte)(89)))));
-            this.cboEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.cboEspecialidad.ForeColor = System.Drawing.Color.White;
-            this.cboEspecialidad.Location = new System.Drawing.Point(100, 141);
-            this.cboEspecialidad.Name = "cboEspecialidad";
-            this.cboEspecialidad.Size = new System.Drawing.Size(128, 32);
-            this.cboEspecialidad.TabIndex = 83;
-            // 
-            // cboGenero
-            // 
-            this.cboGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(59)))), ((int)(((byte)(89)))));
-            this.cboGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.cboGenero.ForeColor = System.Drawing.Color.White;
-            this.cboGenero.Location = new System.Drawing.Point(21, 142);
-            this.cboGenero.Name = "cboGenero";
-            this.cboGenero.Size = new System.Drawing.Size(66, 32);
-            this.cboGenero.TabIndex = 82;
             // 
             // AlumnosSistemaDocente
             // 

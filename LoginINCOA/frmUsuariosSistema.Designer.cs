@@ -209,6 +209,7 @@
             // 
             // cbotipo
             // 
+            this.cbotipo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbotipo.BackColor = System.Drawing.Color.DodgerBlue;
             this.cbotipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbotipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

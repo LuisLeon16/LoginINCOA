@@ -2856,18 +2856,15 @@
   </data>
   <data name="btnRegistroNuevoAsignatura.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAllJREFUSEut
-        lTtoFFEUhtdIRBRBQYiJFoIQECy1sUmCQqpoZUR8gAqK2PgorIJlNBhEK61T+AJbhYBGBbGw8YEgCIsW
-        +153ULNGkrh+ZzmzjidnN8ldf/i5d87j/++duTOTaoV8Pr+tUChcLxaLrxhfM07Cc7lcbq2WtA8E9yFe
-        hTWHH0ql0mYtDUc2m92K2Hcjbjml5eFA5KYRdcmuB7QlDIh8tKIeMbqqLWHgEPzyhB3e05blo1arrViG
-        0X1tCwNGnx1Rjze0JQwIPDSCLlnQMW0JAwJnPGHD3xyGHm0Jg7z5CAk8g5h3tLw9sNoLjnjMn3wZtmtp
-        e+D0dSD4yBjEPKtl/wfs6rBjIs9mneRZzEqteQqn4Rz8BEfhprrIUsChuEaDNapmMpk1lUplPXMxsPmY
-        Ef17VWohWGUnRcPweaKpQXYwIjthPmVyb8lNMs4mYtPEdqr0X5AYXuRlrUZRtIHxuIkLD6hGxcRf1sUF
-        uHYTeGIKPD6WekbvljUzkrvQmyqXy1u4SNtkE9Y/OYyRXr+T56Dskhyi/XJN7orWCA9K091EoCURGRMx
-        hOKP7gu59kDN0UTvCTHKJgItidGEiDCP/1fy4L8K+Zrs15zcHYn9gHFfv2z1fRxYAr/ob2TcybnPiNoy
-        PavE6BCB+WSyFWkcpKeH+TcTv038FHN5cRtxYhdlAXWw7R0U3iKRSxY14Zt0Or0agSHmMyZn+YDddKjN
-        v+Ct34hIHzxN4SXGy4xyghpkUbullg/rLq6fQWuQp+98U5NQINqL+REMTnJ39mDQqSlFKvUHc8l2zH5q
-        X2EAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAbBJREFUSEvt
+        ljFLw1AUhbu4CQqi/gLdXMVBRBwdhSBJkxAH8zMsuPiXxKmzg+AguAhdRHSRVl3Vcx/3gbm56Y15ARcP
+        fLR5957zmts0zeBff6qyLBeGw+EFmICvAB6SJDnkWFsw0KZaUBcmHGsLzY/CHATH2tLMIXCsLc0cAsfa
+        0swhcKwtzRwCx9rSzCFwrC3NHALH2tLMIXCsLc0cAsfa0swtuUzT9AS3yY08z1fiOF7H2hbH2hJhbbgD
+        O2zvLhE6F5zhOIqiJfJlWbaGsx1h/Ro8M/T+DD2rLnye0KhuonBfFMUyexLw/qMmeQPHboMmCUMTnzi7
+        berHa0THoq5BniO3iSbFUAMBV9RLI8TxVNbxFexj9AdyHbzShec2klKaa2Djgnrxeq7VXRCk1eAZcbkq
+        rVmCT71JvTizW63ugiCtBs8Nl6vSmiUY8SL3zvwajdcFKBJjn/JyVW2CvNBHV6vrxw1jl5drwnj3fB+Y
+        8XJVKDxZQV59j7rNw94p9fZ6cfnHW3yyF2nyoDam3qafE01LjNfT/HP6rbBBPzeQLkJo+C2zq8SfxAej
+        /EkMBt8UHuw7ZgxkIQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btnEliminarAsignatura.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -2919,6 +2916,9 @@
   </data>
   <metadata name="asignaturasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>198, 17</value>
+  </metadata>
+  <metadata name="incoa_systemdbDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <metadata name="incoa_systemdbDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginINCOA", "LoginINCOA\LoginINCOA.csproj", "{62944FB4-67FF-453F-9F39-3DD0B6C22CD7}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{9EB87C26-7C4A-44FE-8C5B-178F5463E6BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +13,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{62944FB4-67FF-453F-9F39-3DD0B6C22CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62944FB4-67FF-453F-9F39-3DD0B6C22CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62944FB4-67FF-453F-9F39-3DD0B6C22CD7}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{62944FB4-67FF-453F-9F39-3DD0B6C22CD7}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{62944FB4-67FF-453F-9F39-3DD0B6C22CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62944FB4-67FF-453F-9F39-3DD0B6C22CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EB87C26-7C4A-44FE-8C5B-178F5463E6BC}.Debug|Any CPU.ActiveCfg = Debug
+		{9EB87C26-7C4A-44FE-8C5B-178F5463E6BC}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48C9FD8B-6542-464F-B15C-248C4CA93A5E}
 	EndGlobalSection
 EndGlobal

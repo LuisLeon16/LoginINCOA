@@ -55,6 +55,7 @@ namespace LoginINCOA
                 CajaUsuariosLogin.Clear();
                 PassLogin.Clear();
                 CajaUsuariosLogin.Focus();
+
             }
             //FIN --> VALIDACION DE CAJAS DE TEXTO VACIAS
             else { 

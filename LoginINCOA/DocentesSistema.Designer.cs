@@ -366,6 +366,7 @@
             // 
             // cboGenero
             // 
+            this.cboGenero.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cboGenero.BackColor = System.Drawing.Color.DodgerBlue;
             this.cboGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

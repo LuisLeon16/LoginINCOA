@@ -111,6 +111,8 @@ namespace LoginINCOA
             }
         }
 
+        //ESTE METODO ES "PRIVATE" PARA QUE SOLO SEA ACCESIBLE DIRECTAMENTE EN EL CONTENEDOR Y FORMULARIOS HIJOS
+        //FUERA DE AHI NO VA A FUNCIONAR (PROCESOS INTERNOS)
         private void MostrarFormularios(object MostrandoSubFormularios)
         {
             // SI EL FORMULARIO PRESENTA CONTROLES POR DEFECTO, OJO NO CREADOS EXTERNAMENTE

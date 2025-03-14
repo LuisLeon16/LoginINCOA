@@ -102,6 +102,8 @@ namespace LoginINCOA
                     //CREANDO MENSAJE EN VENTANA FLOTANTE
                     Form Duplicado = new MensajeErrorDuplicados();
                     Duplicado.Show();
+
+                    txtid.Clear(); txtnombre.Clear();
                 }
 
                 finally

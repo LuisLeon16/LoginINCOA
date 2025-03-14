@@ -114,3 +114,9 @@ C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\obj\Debug\LoginINCOA.MensajeCie
 C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\obj\Debug\LoginINCOA.MensajeErrorDuplicados.resources
 C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\obj\Debug\LoginINCOA.MensajeErrorEliminarDatos.resources
 C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\obj\Debug\LoginINCOA.csprojResolveAssemblyReference.cache
+C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\bin\Debug\LoginINCOA.exe.manifest
+C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\bin\Debug\LoginINCOA.application
+C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\obj\Debug\LoginINCOA.exe.manifest
+C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\obj\Debug\LoginINCOA.application
+C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\obj\Debug\LoginINCOA.csprojAssemblyReference.cache
+C:\Users\EliteBook\Desktop\LoginINCOA\LoginINCOA\obj\Debug\LoginINCOA.csproj.CoreCompileInputs.cache

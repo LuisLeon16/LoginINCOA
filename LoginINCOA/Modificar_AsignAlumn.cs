@@ -151,7 +151,7 @@ namespace LoginINCOA
                     MostrarRegistros.Fill(TablaRegistros);
                     DetallesAsignAlumnSistema.DataSource = TablaRegistros;
 
-                    cbCodAsignatura.Text = ""; cbCodDocente.Text = ""; txtNombreAsignatura.Clear(); cbCodDocente.Text = ""; cbCodAlumno.Text = ""; txtnombres.Clear();
+                    cbCodAsignatura.SelectedIndex = -1; cbCodDocente.SelectedIndex = -1; txtNombreAsignatura.Clear(); cbCodDocente.SelectedIndex = -1; cbCodAlumno.SelectedIndex = -1; txtnombres.Clear();
                     Controlador.CierreConexiones(); // CIERRE DE CONEXION
                 }
             }
